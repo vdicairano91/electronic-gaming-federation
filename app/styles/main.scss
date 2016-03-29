@@ -1,0 +1,332 @@
+$black: #191818;
+$grey: #333333;
+$white: #f7f7f7;
+$green: #63ab30;
+$blue: #1e7ec2;
+$yellow: #cbbf2c;
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+//--------------------
+
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothamLight.eot');
+  src: url('../fonts/GothamLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamLight.woff') format('woff'),
+    url('../fonts/GothamLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothamMedium.eot');
+  src: url('../fonts/GothamMedium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamMedium.woff') format('woff'),
+    url('../fonts/GothamMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Black.eot');
+  src: url('../fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gotham-Black.woff') format('woff'),
+    url('../fonts/Gotham-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+*{
+  font-family: 'Gotham', sans-serif;
+  padding: 0;
+//  margin: 0;
+}
+
+h2, h3{
+  margin: 0;
+}
+
+h2{
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h3{
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+p{
+  font-weight: 300;
+  font-size: 14px;
+}
+
+hr{
+  border-top: 1px solid #cccccc;
+}
+
+@media only screen and (min-width : 768px) {
+.col-sm-half{
+  margin-left: 4.6666666666%;
+}
+}
+
+@media only screen and (min-width : 992px) {
+h2{
+  font-size: 36px;
+  }
+  h3{
+    font-size: 20px;
+  }
+}
+
+
+
+//HERO SECTION
+.hero{
+  margin-top: 50px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.tagline{
+  padding-top: 250px;
+  max-height: 400px;
+  color: $white;
+}
+.headline{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.content-container{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media only screen and (min-width : 570px) {
+  .tagline{
+    padding-top: 150px;
+    max-height: none;
+  }
+}
+@media only screen and (min-width : 992px) {
+  .hero{
+    padding-top: 175px;
+  }
+}
+
+//VARIABLE COLORS
+#advisor{
+  .brand-color{
+    color: $blue;
+  }
+  .hero{
+    background-image: url(../images/hero-advisor.png);
+    background-color: $blue;
+  }
+}
+
+//BACKGROUNDS
+.black-background{
+  background-color: $black;
+  color: $white;
+}
+.blue-background{
+  background-color: $blue;
+  color: $white;
+}
+.yellow-background{
+  background-color: $yellow;
+  color: $white;
+}
+.green-background{
+  background-color: $green;
+  color: $white;
+}
+
+.white-background{
+  background-color: $white;
+  color: $black;
+}
+
+//SIDE ICONS
+.icon-title{
+  margin-bottom: 0;
+  font-size: 30px;
+  color: $blue;
+  font-weight: 900;
+}
+.icon{
+    padding-top: 30px;
+  p{
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-width : 768px) {
+  .icon{
+    padding-top: 30px;
+    p{
+      padding-top: 0;
+    }
+  }
+  .icon-title{
+    min-height: 45px;
+    padding-top: 5px;
+    color: $white;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width : 992px) {
+  .icon-title{
+    min-height: 70px;
+    font-size: 20px;
+  }
+}
+
+//FORM
+input{
+  border: none;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  color: $black;
+  width: 100%;
+  &::-webkit-input-placeholder {
+    color: $black;
+  }
+  &::-moz-placeholder { 
+    color: $black;
+  }
+  &:-ms-input-placeholder {  
+    color: $black;
+  }
+}
+.message{
+  height: 110px;
+}
+.submit{
+  width: 25%;
+  border: 2px solid $white;
+}
+
+
+
+
+
+//COMMON ELEMENTS
+
+//NAVBAR
+.nav{
+  font-weight: 500;
+}
+.navbar-fixed-top{
+  border-width: 0;
+}
+.container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
+  margin-left: -15px;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: $white;
+}
+
+//SUBFOOTER
+#subfooter{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: $grey;
+  color: $white;
+  p{
+    font-weight: 500;
+  }
+}
+.subfooter-email {
+  padding-top: 10px;
+  a{
+    color: $white;
+    &:active, &:hover{
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+//hides and shows logo
+#advisor{
+  .logo-egf{
+    display: none;
+  }
+}
+
+//FOOTER
+footer .row{
+  background: $black;
+  color: $white;
+  padding-top: 10px;
+  ul{
+    list-style: none;
+    font-weight: 300;
+    font-size: 12px;
+    }
+  li{
+    line-height: 14px;
+    &:first-child{
+      font-weight: 500;
+    }
+  }
+  a{
+    color: $white;
+    &:active, &:hover{
+      color: $white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+  p{
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
