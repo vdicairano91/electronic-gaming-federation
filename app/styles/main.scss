@@ -44,7 +44,14 @@ $yellow: #cbbf2c;
   padding: 0;
 //  margin: 0;
 }
-
+a{
+  text-decoration: none;
+  &:active, &:hover{
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
 h2, h3{
   margin: 0;
 }
@@ -60,6 +67,14 @@ h3{
   font-size: 16px;
   margin-bottom: 20px;
 }
+
+h4{
+  font-weight: 900;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 p{
   font-weight: 300;
   font-size: 14px;
@@ -82,8 +97,13 @@ h2{
   h3{
     font-size: 20px;
   }
+  h4{
+    font-size: 26px;
+  }
 }
-
+.black-text{
+  color: $black;
+}
 
 
 //HERO SECTION
@@ -102,8 +122,8 @@ h2{
   padding-bottom: 10px;
 }
 .content-container{
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 @media only screen and (min-width : 570px) {
   .tagline{
@@ -115,22 +135,69 @@ h2{
   .hero{
     padding-top: 175px;
   }
+  .content-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
-//VARIABLE COLORS
-#advisor{
+//VARIABLE ELEMENTS
+#about{
+  .brand-color{
+    color: $green;
+  }
+  .hero{
+    background-image: url(../images/hero-about.png);
+    background-color: $green;
+  }
+  .logo-cegf{
+    display: none;
+  }
+}
+#students{
   .brand-color{
     color: $blue;
   }
   .hero{
-    background-image: url(../images/hero-advisor.png);
+    background-image: url(../images/hero-students.png);
     background-color: $blue;
+  }
+  .logo-egf{
+    display: none;
+  }
+}
+#administrators{
+  .brand-color{
+    color: $blue;
+  }
+  .hero{
+    background-image: url(../images/hero-administrators.png);
+    background-color: $blue;
+  }
+  .logo-egf{
+    display: none;
+  }
+}
+#contact{
+  .brand-color{
+    color: $green;
+  }
+  .hero{
+    background-image: url(../images/hero-administrators.png);
+    background-color: $green;
+  }
+  .logo-cegf{
+    display: none;
   }
 }
 
 //BACKGROUNDS
 .black-background{
   background-color: $black;
+  color: $white;
+}
+.grey-background{
+  background-color: $grey;
   color: $white;
 }
 .blue-background{
@@ -149,6 +216,27 @@ h2{
 .white-background{
   background-color: $white;
   color: $black;
+}
+.img-banner{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  &.banner-about{
+    background-image: url(../images/banner-about.png);
+    padding-top: 28%;
+  }
+}
+.banner-divider{
+ margin-top: 10px;
+}
+.table{
+  margin-bottom: 0;
+  & > tbody > tr > td{
+    border: none;
+    font-size: 11px;
+    width: 14.285%;
+    text-align: center;
+    padding: 0;
+  }
 }
 
 //SIDE ICONS
@@ -246,15 +334,8 @@ input{
   a{
     color: $white;
     &:active, &:hover{
-      text-decoration: none;
       cursor: pointer;
     }
-  }
-}
-//hides and shows logo
-#advisor{
-  .logo-egf{
-    display: none;
   }
 }
 
