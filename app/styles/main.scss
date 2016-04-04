@@ -113,6 +113,9 @@ h2{
 .black-text{
   color: $black;
 }
+.white-text{
+  color: $white;
+}
 
 
 //HERO SECTION
@@ -162,7 +165,7 @@ h2{
     background-image: url(../images/hero-administrators.png);
     background-color: $grey;
   }
-  .logo-cegf{
+  .logo-cegf, .logo-media{
     display: none;
   }
 }
@@ -174,7 +177,7 @@ h2{
     background-image: url(../images/hero-about.png);
     background-color: $green;
   }
-  .logo-cegf{
+  .logo-cegf, .logo-media{
     display: none;
   }
 }
@@ -186,7 +189,19 @@ h2{
     background-image: url(../images/hero-students.png);
     background-color: $blue;
   }
-  .logo-egf{
+  .logo-egf, .logo-media{
+    display: none;
+  }
+}
+#media{
+  .brand-color{
+    color: $yellow;
+  }
+  .hero{
+    background-image: url(../images/hero-media.png);
+    background-color: $grey;
+  }
+  .logo-egf, .logo-cegf{
     display: none;
   }
 }
@@ -198,7 +213,7 @@ h2{
     background-image: url(../images/hero-administrators.png);
     background-color: $blue;
   }
-  .logo-egf{
+  .logo-egf, .logo-media{
     display: none;
   }
 }
@@ -210,7 +225,7 @@ h2{
     background-image: url(../images/hero-administrators.png);
     background-color: $green;
   }
-  .logo-cegf{
+  .logo-cegf, .logo-media{
     display: none;
   }
 }
