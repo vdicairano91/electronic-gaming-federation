@@ -14,20 +14,24 @@ $yellow: #cbbf2c;
 //FONTS
 @font-face {
   font-family: 'Gotham';
-  src: url('Gotham-BookItalic.eot');
-  src: url('Gotham-BookItalic.eot?#iefix') format('embedded-opentype'),
-    url('Gotham-BookItalic.woff') format('woff'),
-    url('Gotham-BookItalic.ttf') format('truetype');
+  src: url('../fonts/Gotham-BookItalic.eot');
+  src: url('../fonts/Gotham-BookItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gotham-BookItalic.woff2') format('woff2'),
+    url('../fonts/Gotham-BookItalic.woff') format('woff'),
+    url('../fonts/Gotham-BookItalic.ttf') format('truetype'),
+    url('../fonts/Gotham-BookItalic.svg#Gotham-BookItalic') format('svg');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Gotham';
-  src: url('Gotham-Book.eot');
-  src: url('Gotham-Book.eot?#iefix') format('embedded-opentype'),
-    url('Gotham-Book.woff') format('woff'),
-    url('Gotham-Book.ttf') format('truetype');
+  src: url('../fonts/Gotham-Book.eot');
+  src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gotham-Book.woff2') format('woff2'),
+    url('../fonts/Gotham-Book.woff') format('woff'),
+    url('../fonts/Gotham-Book.ttf') format('truetype'),
+    url('../fonts/Gotham-Book.svg#Gotham-Book') format('svg');
   font-weight: 300;
   font-style: normal;
 }
@@ -36,8 +40,10 @@ $yellow: #cbbf2c;
   font-family: 'Gotham';
   src: url('../fonts/GothamMedium.eot');
   src: url('../fonts/GothamMedium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamMedium.woff2') format('woff2'),
     url('../fonts/GothamMedium.woff') format('woff'),
-    url('../fonts/GothamMedium.ttf') format('truetype');
+    url('../fonts/GothamMedium.ttf') format('truetype'),
+    url('../fonts/GothamMedium.svg#GothamMedium') format('svg');
   font-weight: 500;
   font-style: normal;
 }
@@ -45,8 +51,10 @@ $yellow: #cbbf2c;
   font-family: 'Gotham';
   src: url('../fonts/Gotham-Black.eot');
   src: url('../fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gotham-Black.woff2') format('woff2'),
     url('../fonts/Gotham-Black.woff') format('woff'),
-    url('../fonts/Gotham-Black.ttf') format('truetype');
+    url('../fonts/Gotham-Black.ttf') format('truetype'),
+    url('../fonts/Gotham-Black.svg#Gotham-Black') format('svg');
   font-weight: 900;
   font-style: normal;
 }
@@ -294,6 +302,10 @@ h2{
     background-image: url(../images/banner-about.png);
     padding-top: 28%;
   }
+  &.banner-media{
+    background-image: url(../images/banner-media.png);
+    padding-top: 20%;
+  }
 }
 .banner-divider{
  margin-top: 10px;
@@ -317,6 +329,11 @@ h2{
   color: $blue;
   font-weight: 900;
 }
+#media{
+  .icon-title{
+    color: $yellow;
+  }
+}
 .icon{
     padding-top: 30px;
   p{
@@ -338,6 +355,13 @@ h2{
     margin-bottom: 20px;
   }
 }
+#media{
+  .grey-background{
+    .icon-title{
+      color: $white;
+    }
+  }
+}
 @media only screen and (min-width : 992px) {
   .icon-title{
     min-height: 70px;
@@ -347,7 +371,7 @@ h2{
 
 
 //FORM
-input{
+input, textarea{
   border: none;
   padding: 5px 10px;
   margin-bottom: 10px;
@@ -363,7 +387,7 @@ input{
     color: $black;
   }
 }
-.message{
+textarea{
   height: 110px;
 }
 .submit{
@@ -402,6 +426,22 @@ input{
     font-size: 12px;
     padding: 5px 10px;
   }
+}
+
+//COMMUNITY SPOTLIGHT
+@media only screen and (min-width : 768px) {
+  .community-bio{
+    font-size: 12px;
+  }
+}
+.media-core-btn{
+  width: 100%;
+  margin-top: 20px;
+  background-color: $yellow;
+  color: $white;
+  font-size: 18px;
+  border: 0;
+  padding: 7px 5px;
 }
 
 //COMMON ELEMENTS
