@@ -104,7 +104,9 @@ p{
 hr{
   border-top: 1px solid #cccccc;
 }
-
+.padding-bottom-20{
+  padding-bottom: 20px;
+}
 @media only screen and (min-width : 768px) {
 .col-sm-half{
   margin-left: 4.6666666666%;
@@ -418,16 +420,17 @@ textarea{
       color: $white;
     }
   }
-  button{
-    width: 100%;
-    background: transparent;
-    border: 2px solid $white;
-    color: $white;
-    font-size: 12px;
-    padding: 5px 10px;
-  }
 }
-
+.clear-button{
+  width: 100%;
+  background: transparent;
+  border: 2px solid $white;
+  color: $white;
+  font-size: 12px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
 //COMMUNITY SPOTLIGHT
 @media only screen and (min-width : 768px) {
   .community-bio{
